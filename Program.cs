@@ -53,7 +53,7 @@ namespace DesignPatternFacade
                             }
                             else
                             {
-                                Console.WriteLine("De qui faire le traitement ? Avec le chiffre");
+                                Console.WriteLine("De qui faire le traitement ? Avec le chiffre"); 
                                 CAF.BureauArchive.AfficherListeDesDossiers();
                                 choixBoucleInt = Int32.Parse(Console.ReadLine());
                                 CAF.Traitement(CAF.BureauArchive.ListeDossier[choixBoucleInt - 1]);
