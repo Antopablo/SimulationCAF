@@ -17,7 +17,8 @@ namespace DesignPatternFacade
             {
                 try
                 {
-                    Console.WriteLine("\r\nQue voulez-vous faire ?\r\n1) Ajouter un Dossier\r\n2) Afficher la liste des dossiers\r\n3) Traiter un dossier\r\n4) Quitter");
+                    Console.WriteLine("\r\nQue voulez-vous faire ?\r\n1) Ajouter un Dossier\r\n2) Afficher la liste des dossiers\r\n" +
+                        "3) Traiter un dossier\r\n4) Quitter");
                 choixBoucleInt = Int32.Parse(Console.ReadLine());
                 
                     switch (choixBoucleInt)

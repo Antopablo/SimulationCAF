@@ -59,9 +59,6 @@
         }
 
 
-
-
-
         public Dossier(string nom, int salaire = 0, int loyer = 0,  int nbEnfant = 0, int dette = 0)
         {
             Nom = nom;

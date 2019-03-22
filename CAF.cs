@@ -71,15 +71,14 @@ namespace DesignPatternFacade
 
         public void Traitement (Dossier dos)
         {
-            //BureauArchive.ListeDossier.Add(dos);
             BureauAllocationFam.TestAllocFam(dos);
             BureauAllocationLog.TestAllocLog(dos);
             BureauRecouvrement.GenererDette(dos);
             BureauRecouvrement.VerifierDette(dos);
             Compta.PayerAlloc(dos);
+            dos.Dette = 0;
+            dos.Alloc = 0;
             Console.WriteLine("\r\n");
         }
-
-
     }
 }
